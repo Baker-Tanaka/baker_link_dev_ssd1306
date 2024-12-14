@@ -1,0 +1,12 @@
+services:
+  baker_link_dev_ssd1306:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: "baker-link-env"
+    container_name: "baker_link_dev_ssd1306-container"
+    volumes:
+      - "../:/baker_link_dev_ssd1306"
+    working_dir: /baker_link_dev_ssd1306
+    command: /bin/sh
+    tty: true

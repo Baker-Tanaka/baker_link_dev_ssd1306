@@ -1,0 +1,19 @@
+{
+    "name": "baker_link_dev_ssd1306",
+    "dockerComposeFile": "../.docker/compose.yaml",
+    "service": "baker_link_dev_ssd1306",
+    "workspaceFolder": "/baker_link_dev_ssd1306",
+    "remoteEnv": {
+        "LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "rust-lang.rust-analyzer",
+                "probe-rs.probe-rs-debugger",
+                "tamasfe.even-better-toml",
+                "fill-labs.dependi"
+            ]
+        }
+    }
+}
